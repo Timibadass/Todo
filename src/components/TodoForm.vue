@@ -55,7 +55,7 @@ export default {
             todoObj.push(todoItem);
             localStorage.setItem("Todos", JSON.stringify(todoObj));
             this.stored  = true;
-            router.push({ name: 'Todo', params: { title: this.todo.title } })
+            this.$router.push({ name: 'Todo', params: { title: this.todo.title } })
         }
     }
 }
