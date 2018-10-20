@@ -1,16 +1,17 @@
 <template>
   <div id="app">
+    <header-component></header-component>
     <router-view />
   </div>
 </template>
 
 <script>
-import TodoForm from './components/TodoForm.vue'
+import headerComponent from './components/headerComponent.vue'
 
 export default {
   name: 'app',
   components: {
-    TodoForm
+    headerComponent
   }
 }
 </script>

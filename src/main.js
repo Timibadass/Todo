@@ -5,6 +5,7 @@ import VueRouter  from 'vue-router';
 import TodoForm from './components/TodoForm.vue';
 import viewTodo from './components/viewTodo.vue';
 import TodoList from './components/TodoList.vue';
+import completedTodoList from './components/completedTodoList.vue';
 
 Vue.use(VueRouter);
 
@@ -35,11 +36,11 @@ const routes = [
     path: '/todos/:title',
     component: viewTodo
   },
-  // {
-  //   name: 'Completed Todos',
-  //   path: '/todos/completed',
-  //   component: completedTodoList
-  // }
+  {
+    name: 'Completed Todos',
+    path: '/todos/completed',
+    component: completedTodoList
+  }
 ]
 
 const router = new VueRouter({
