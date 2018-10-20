@@ -63,57 +63,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .todo_form {
-        width: calc(100% - 20px);
-        padding: 10px;
-        max-width: 500px;
-        margin: auto;
-    }
-
-    .todo_form label {
-        display: block;
-        margin: auto;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .todo_title {
-        width: calc(80% - 8px);
-        margin: auto;
-        margin-bottom: 10px;
-        height: 30px;
-        display: block;
-        border: 1px solid #026AA7;
-        border-radius: 10px;
-        padding: 8px;
-        max-width: 250px;
-    }
-
-    .todo_description {
-        padding: 8px;
-        margin: auto;
-        max-width: 250px;
-        display: block;
-        width: calc(80% - 8px);
-        height: 100px;
-        border: 1px solid #026AA7;
-        border-radius: 10px;
-    }
-
-    .todo_button {
-        background-color: #026AA7;
-        color: #CCE1ED;
-        display: block;
-        width: 120px;
-        height: 50px;
-        border: 1px solid #026AA7;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 20px
-    }
-
-    .disabled {
-        background-color: aliceblue;
-        border: aliceblue;
-    }
+    
 </style>
