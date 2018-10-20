@@ -46,7 +46,7 @@ body {
   max-width: 800px;
 }
 
-.header {
+.headerComponent {
   background-color: #026AA7;
   color: #CCE1ED;
   display: flex;

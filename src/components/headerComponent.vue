@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="headerComponent">
         <div class="header_child">
             <router-link :to="{ name: 'Home' }">Home</router-link>            
         </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'header'
+    name: 'headerComponent'
 }
 </script>
 

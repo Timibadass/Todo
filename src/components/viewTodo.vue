@@ -4,9 +4,7 @@
         <p>Description -  {{todo.description}}</p>
         <input type="checkbox" name="completed"  v-model='completed' id="completed-todo"> 
         <label for="completed"> Completed </label>
-        <button v-on:click='moveTodo'>
-            <router-link :to='{ name: "Completed Todos" }'>Submit</router-link>
-        </button>
+        <button v-on:click='moveTodo'> Submit </button>
     </div>
 </template>
 
@@ -41,9 +39,9 @@ export default {
             let todoTitle = this.$route.params.title;
             let completedTodos = JSON.parse(localStorage.getItem('completed Todos'));
             let todoPosition;
-
             
             if (completedTodos === null) completedTodos = [];
+
             if(this.completed) {
                 todos.forEach( todo => {
                     if (todo.title == todoTitle) {
@@ -56,7 +54,8 @@ export default {
                 });
                 let newTodos = todos.splice(todoPosition, 1);
                 localStorage.setItem('Todos', JSON.stringify(todos));
-            }
+                this.$router.push({ name: 'Completed Todos'});
+            };
         }
     }
 }
