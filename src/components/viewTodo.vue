@@ -40,7 +40,6 @@ export default {
             let todos = JSON.parse(localStorage.getItem('Todos'));
             let todoTitle = this.$route.params.title;
             let completedTodos = JSON.parse(localStorage.getItem('completed Todos'));
-            let todoPosition;
             
             if (completedTodos === null) completedTodos = [];
             if(this.completed) {
@@ -48,7 +47,6 @@ export default {
                     if (todo.title == todoTitle) {
                         todo.completed = this.completed;
                         todo.completedAt = new Date();
-                        todoPosition = todos.indexOf(todo);
                         completedTodos.push(todo); 
                         localStorage.setItem('completed Todos', JSON.stringify(completedTodos));
                     }
