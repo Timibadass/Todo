@@ -61,6 +61,11 @@ body {
   max-width: 150px;
 }
 
+.header_child .router-link-exact-active {
+  background-color: #CCE1ED;
+  color: #026AA7;
+}
+
 .todo_list, .completed_todo_container {
   display: flex;
   flex-direction: row;
