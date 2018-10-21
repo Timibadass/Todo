@@ -21,16 +21,11 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   background-color: #F8F9F9;
 }
 
 body {
   margin: 0;
-}
-
-#app > div {
-  padding: 10px;
 }
 
 #app a {
@@ -48,22 +43,38 @@ body {
 .headerComponent {
   background-color: #026AA7;
   color: #CCE1ED;
+  padding: 5px;
+  height: 40px;
+}
+
+.header_container {
   display: flex;
+  height: 100%;
   margin: auto;
-  max-width: 500px;
+  max-width: 800px;
+  width: 100%;
   text-align: center;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header_container .router-link-exact-active {
+  border-bottom: 2px solid #343434;
 }
 
 .header_child {
+  border: 1px solid red;
+  padding: 10px;
+  width: 20%;
   max-width: 150px;
 }
 
-.header_child .router-link-exact-active {
-  background-color: #CCE1ED;
-  color: #026AA7;
+.header_child a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .todo_list, .completed_todo_container {
