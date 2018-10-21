@@ -1,3 +1,5 @@
+<h1>A simple todo app built with Vue.js</h1>
+
 # todo
 
 ## Project setup
