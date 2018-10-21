@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h2>Add A Todo</h2>
         <form   v-on:submit.prevent="storeTodo"  class="todo_form">
             <label for="todo.tile">Enter the title for your todo</label>
             <input class="todo_title" type="text" required v-model="todo.title" placeholder="Enter something you need to do">

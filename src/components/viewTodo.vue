@@ -55,7 +55,7 @@ export default {
                 let newTodos = todos.splice(todoPosition, 1);
                 localStorage.setItem('Todos', JSON.stringify(todos));
                 this.$router.push({ name: 'Completed Todos'});
-            };
+            }
         }
     }
 }

@@ -23,7 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #F8F9F9;
-  margin-top: 60px;
 }
 
 body {
@@ -101,22 +100,21 @@ body {
 .todo_form {
   width: calc(100% - 20px);
   padding: 10px;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
-
 }
 
 .todo_form label {
   display: block;
   margin: auto;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .todo_title {
   width: calc(80% - 8px);
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   height: 30px;
   display: block;
   border: 1px solid #026AA7;
