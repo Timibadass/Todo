@@ -51,7 +51,7 @@ body {
   display: flex;
   height: 100%;
   margin: auto;
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
   text-align: center;
   flex-direction: row;
@@ -61,14 +61,12 @@ body {
 }
 
 .header_container .router-link-exact-active {
-  border-bottom: 2px solid #343434;
+  border-bottom: 3px solid #343434;
 }
 
 .header_child {
-  border: 1px solid red;
-  padding: 10px;
   width: 20%;
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .header_child a {
@@ -118,6 +116,10 @@ body {
   padding: 10px;
   max-width: 400px;
   margin: auto;
+}
+
+.todo_form h2 {
+  text-align: center;
 }
 
 .todo_form label {
