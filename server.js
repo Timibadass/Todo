@@ -9,7 +9,6 @@ app.use(history());
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist'));
 
-
 app.get('*', ( req, res ) => {
   res.sendFile( __dirname + '/dist/index.html');
 });
