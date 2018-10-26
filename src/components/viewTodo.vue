@@ -30,7 +30,7 @@ export default {
         getTodo: function() {
             let todos = JSON.parse(localStorage.getItem('Todos'))
             let todoTitle = this.$route.params.title;
-            todos.forEach(todo => {
+            todos.filter(todo => {
                 todo.title == todoTitle ? this.todo = todo : false ;
             });
         },
@@ -43,7 +43,7 @@ export default {
             if (completedTodos === null) completedTodos = [];
 
             if(this.completed) {
-                todos.forEach( todo => {
+                todos.filter( todo => {
                     if (todo.title == todoTitle) {
                         todo.completed = this.completed;
                         todo.completedAt = new Date();
