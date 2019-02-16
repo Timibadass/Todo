@@ -7,7 +7,7 @@ const prodPlugin = [
         // Required - The path to the webpack-outputted app to prerender.
         staticDir: path.join(__dirname, 'dist'),
         // Required - Routes to render.
-        routes: [ '/', '/todos', '/add', '/todos/completed' ],
+        routes: [ '/', '/todos', '/add' ],
         renderer: new Renderer({
             renderAfterElementExists: '#app',
             // headless: false // Display the browser window when rendering. Useful for debugging.
