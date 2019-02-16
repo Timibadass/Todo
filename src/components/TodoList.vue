@@ -30,7 +30,38 @@ export default {
             Todos: [],
         }
     },
-
+    metaInfo() {
+        return {
+        title: "The world's best Todo App ever created",
+        meta: [
+            { title: 'Todo List | Ajuwaya Learn' },
+            {
+            name: 'description',
+            content: 'Welcome to Ajuwaya Learn'
+            },
+            {
+            property: 'og:description',
+            content: 'Ajuwaya Learn'
+            },
+            {
+            property: 'og:title',
+            content: 'Welcome | Ajuwaya Learn'
+            },
+            {
+            property: 'og:image',
+            content: '../public/favicon.ico'
+            },
+            {
+            property: 'og:site_name',
+            content: 'Ajuwaya Learn' 
+            },
+            {
+            property: 'og:type',
+            content: 'website' 
+            }
+        ]
+        }
+    }
     mounted() {
         this.getTodos();
     },
