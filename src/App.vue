@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" data-server-rendered="true">
     <header-component></header-component>
     <router-view />
   </div>
