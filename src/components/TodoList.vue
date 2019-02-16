@@ -61,7 +61,7 @@ export default {
             }
         ]
         }
-    }
+    },
     mounted() {
         this.getTodos();
     },
